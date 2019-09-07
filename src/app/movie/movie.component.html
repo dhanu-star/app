@@ -1,0 +1,13 @@
+<p>movie works!</p>
+<form [formGroup]="registerForm">
+                          <p>MovieName: </p>
+                          <input type="text" id="name" formControlName="name" />
+                          <p>Language:</p>
+                          <input type="text" id="pass" formControlName="pass" />
+                          <p>Genre:</p>
+                          <input type="text" id="cpass" formControlName="cpass"><br><br>
+                          <button (click)="check12(registerForm.value)">save</button>
+                          <button (cilck)="log()">cancel</button>  
+                          <button type="button" (click)="todolist3()">log</button>      
+                        </form>
+                      

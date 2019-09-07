@@ -1,0 +1,37 @@
+ <p>todolist3 works!</p>
+<form #locForm="ngForm" (ngSubmit)="create(locForm.value)">
+      <div>
+              <label>ID</label>
+              <input type="text"#locRef="ngModel" name="name" [(ngModel)]="id">
+      </div>
+      <div>
+              <label>TITLE</label>
+              <input type="text"#locRef="ngModel" name="title" [(ngModel)]="title">
+      </div>
+      <div>
+              <label>AUTHOR</label>
+              <input type="text"#locRef="ngModel" name="author" [(ngModel)]="author">
+      </div>
+      <button>Submit</button>
+  </form>
+  <br>
+  <table>
+      <thead>
+          <tr>
+              <td>ID</td>
+              <td>Title</td>
+              <td>Author</td>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let val of value">
+              <td><input type="text" [(ngModel)]="val.id"> </td>
+              <td><input type="text" [(ngModel)]="val.title"></td>
+              <td><input type="text" [(ngModel)]="val.author"></td>
+              <td (click)="delete(val.id)"> delete</td>
+              <td (click)="update(val)">update</td>
+          </tr>
+      </tbody>
+  </table>
+
+   

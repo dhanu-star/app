@@ -1,0 +1,22 @@
+<p>signup5 works!</p>
+<form [formGroup]="signform">            
+    <div>
+        <label>name:</label>
+        <input type="text" formControlName="n1" [(ngModel)]="name">
+    </div>
+    <p>
+        age:<input type="number" formControlName="n2"  [(ngModel)]="age">
+    </p>
+    <p>
+        mobile:<input type="number" formControlName="n3"  [(ngModel)]="mobile">
+    </p>
+    <p>gender:<select formControlName="n4"  [(ngModel)]="gender">
+            <option>male</option>2
+            <option>female
+            <option>
+        </select></p>
+    <p>username:<input type="username" formControlName="n5"  [(ngModel)]="uname"></p>
+    <p>password:<input type="password" formControlName="n6"  [(ngModel)]="pass"></p>
+    <button (click)="sign(signform)"> submit</button>
+    <button (click)="view()"> ViewData</button>
+ </form>

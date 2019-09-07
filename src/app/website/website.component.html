@@ -1,0 +1,77 @@
+
+
+<p>crud2 works!</p>
+<div class="todos">
+        ​
+            <div class="header">
+            <form (submit)="addTodo($event)">
+            <input [(ngModel)]="newTodo"  class="textfield" name="newTodo">
+            <button  type="submit" [disabled]="newTodo===''">addTodo</button>
+            </form>
+            </div>
+        ​   
+            <div [hidden]="newTodo">
+        ​    </div>
+        ​
+            <ul class="ul">
+            <li *ngFor="let todo of todos; let i=index" class="ul">
+            <input type="checkbox" class="checkbox" [(ngModel)]="todo.completed" />
+            <span [ngClass]="{'checked': todo.completed}">{{ todo.newTodo }}</span>
+            <span (click)="deleteTodo(i)"></span>
+            </li>
+            </ul>
+        ​
+            <button (click)="deleteTodos()">Delete</button>
+            </div>
+        ​    
+<!-- <div class="container">
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="fname" [(ngModel)]="employee.fname1"></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="lname" [(ngModel)]="employee.lname"></td>
+        </tr>
+        <tr>
+            <td>Mobile</td>
+            <td><input type="number" name="mobile" [(ngModel)]="employee.mobile"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" [(ngModel)]="employee.email"></td>
+        </tr>
+    </table>
+    <div style="margin-top: 10px">
+        <button type="button" class="btn btn-primary" (click)="saveData()">SAVE</button>
+    </div>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th> First Name </th>
+                <th> Last Name </th>&nbsp;&nbsp;
+                <th> Mobile </th>&nbsp;&nbsp;
+                <th> Email </th>&nbsp;&nbsp;
+                <th> Edit </th>&nbsp;&nbsp;
+                <th> Remove </th>&nbsp;&nbsp;
+            </tr>
+        </thead>
+        <tbody *ngIf="employeeList.length>0;else nodatafound">
+            <tr *ngFor="let details of employeeList;let i=index">
+                <td>{{details.fname1}}</td>
+                <td>{{details.lname}}</td>
+                <td>{{details.mobile}}</td>
+                <td>{{details.email}}</td>
+                <td><button type="button" class="btn btn-warning" (click)="update(i)">update</button></td>
+                <td><button type="button" class="btn btn-danger" (click)="delete(i)">delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+ </div>
+ <ng-template #nodatafound>
+    No data found
+ </ng-template>
+ 
+  -->

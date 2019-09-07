@@ -1,0 +1,27 @@
+<p>crud works!</p>
+<div>
+<table>
+   <tr>
+       <th>name---</th>
+
+       <th>age---</th>
+       <th>mobile---</th>
+       <th>uname---</th>
+       <th>gender---</th>
+       <th>pass---</th>
+   </tr>
+
+   <tr>
+       <td>{{data1.name}}</td>
+       <td>{{data1.age}}</td>
+       <td>{{data1.mobile|number:'4.0-3'}}</td>
+       <td>{{data1.uname}}</td>
+       <td>{{data1.gender}}</td>
+       <td>{{data1.pass}}</td>
+   </tr>
+</table>
+
+<br>
+<button (click)="up()"> update</button>
+   <button (click)="rem()"> Remove</button>
+   </div>

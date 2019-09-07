@@ -1,0 +1,11 @@
+<p>ui works!</p>
+<body img src="../../assets\download.jpg)">
+    ​
+    <div *ngIf="btnHide" id="sidenav" (click)="close(close)">
+            <button *ngIf="btnHide" (click)="close()" style="color: white;" class="w3-bar-item w3-button w3-large"></button>
+        <h1 routerLink="sign" id="name">Home</h1><br>
+            <h1 routerLink="/sign">Services</h1><br>
+        <h1 routerLink="/about"> About us</h1><br>
+        <h1 routerLink="/contact">Contact</h1>
+    </div>
+    <button *ngIf="!btnHide" (click)="openNav()">OPEN</button></body>

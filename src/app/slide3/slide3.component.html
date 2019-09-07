@@ -1,0 +1,56 @@
+<p *ngFor="let alert of alerts">
+        <ngb-alert [type]="alert.type" (close)="close(alert)">{{ alert.message }}</ngb-alert>
+       </p>
+       
+       <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="assets/fog.jpg"width="100%" alt="Random first slide">
+          </div>
+       
+          <div class="carousel-caption">
+            <h3>First slide label</h3>
+            <p>hai.</p>
+          </div>
+        </ng-template>
+       
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="assets/flower.jpg" width="100%" alt="Random second slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>Second slide label</h3>
+            <p>hello</p>
+          </div>
+        </ng-template>
+       
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="assets/babies.jpg" width="100%"  alt="Random third slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>Third slide label</h3>
+            <p>welcome.</p>
+          </div>
+        </ng-template>
+       
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img src="assets/foggy.jpg"width="100%"  alt="Random third slide">
+            </div>
+            <div class="carousel-caption">
+              <h3>Fourth slide label</h3>
+              <p>people.</p>
+            </div>
+          </ng-template>
+       
+          <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img src="assets/home.jpg" width="100%"  alt="Random third slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>Fifth slide label</h3>
+                <p>thank u.</p>
+              </div>
+            </ng-template>
+        </ngb-carousel>

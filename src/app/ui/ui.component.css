@@ -1,0 +1,25 @@
+.sidenav{
+    background-color: black;
+    height: 645px;
+    width: 200px;
+    margin-left: -8px;
+    padding: 30px;
+    text-align: end;
+}
+#sidenav:hover{
+    background-color: rgb(204, 2, 69);
+}
+​
+#sidenav{
+    background-color: blue;
+    width: 800px;
+    height: 500px;
+}
+h1{
+    color: rgb(4, 1, 173);
+    text-align: center;
+    padding: 15px;
+}
+h1:hover{
+    background-color: rgb(139, 224, 139);
+}

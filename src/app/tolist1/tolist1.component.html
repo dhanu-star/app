@@ -1,0 +1,27 @@
+<p>tolist1 works!</p>
+<p>tolist works!</p>
+<div class="todos">
+    ​
+        <div class="header">
+        <form (submit)="addTodo($event)">
+        <input [(ngModel)]="newTodo"  class="textfield" name="newTodo">
+        <button  type="submit" [disabled]="newTodo===''">addTodo</button>
+        </form>
+        </div>
+    ​   
+        <div [hidden]="newTodo">
+    ​    </div>
+    ​
+        <ul class="ul">
+        <li *ngFor="let todo of todos; let i=index" class="ul">
+        <input type="checkbox" class="checkbox" [(ngModel)]="todo.completed" />
+        <span [ngClass]="{'checked': todo.completed}">{{ todo.newTodo }}</span>
+        <span (click)="deleteTodo(i)"></span>
+        </li>
+        </ul>
+    ​
+        <button (click)="deleteTodos()">Delete</button>
+        </div>
+    ​    
+
+    

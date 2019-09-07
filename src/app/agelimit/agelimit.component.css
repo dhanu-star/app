@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+    align-content: center;
+}
+input,button{
+    width: 300px;
+    margin-top: 45px;
+    height: 40px;
+    text-align: center;
+}

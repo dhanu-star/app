@@ -1,0 +1,51 @@
+<div class="container">
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="fname" [(ngModel)]="employee.fname1"></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="lname" [(ngModel)]="employee.lname"></td>
+        </tr>
+        <tr>
+            <td>Mobile</td>
+            <td><input type="number" name="mobile" [(ngModel)]="employee.mobile"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" [(ngModel)]="employee.email"></td>
+        </tr>
+    </table>
+    <div style="margin-top: 10px">
+        <button type="button" class="btn btn-primary" (click)="saveData()">SAVE</button>
+    </div>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th> First Name </th>
+                <th> Last Name </th>&nbsp;&nbsp;
+                <th> Mobile </th>&nbsp;&nbsp;
+                <th> Email </th>&nbsp;&nbsp;
+                <th> Edit </th>&nbsp;&nbsp;
+                <th> Remove </th>&nbsp;&nbsp;
+            </tr>
+        </thead>
+        <tbody *ngIf="employeeList.length>0;else nodatafound">
+            <tr *ngFor="let details of employeeList;let i=index">
+                <td>{{details.fname1}}</td>
+                <td>{{details.lname}}</td>
+                <td>{{details.mobile}}</td>
+                <td>{{details.email}}</td>
+                <td><button type="button" class="btn btn-warning" (click)="edit(i)">Edit</button></td>
+                <td><button type="button" class="btn btn-danger" (click)="remove(i)">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+ </div>
+ <ng-template #nodatafound>
+    No data found
+ </ng-template>
+ 
+ 

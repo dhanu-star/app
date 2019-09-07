@@ -1,0 +1,9 @@
+<fieldset> <div id="a2">
+                          <h1 id="a1">My To Do List</h1>
+                         <input type="text" [(ngModel)]="arr" id="a3" /> <button (click)="add(arr)" id="a4">Add</button> <button (click)="r(arr)" id="a5">Remove</button>
+                         </div></fieldset>
+                         <br>
+                              <table>
+                                <tr *ngFor='let a of arr1;let i=index'><h3 id="a6" (click)="delete(i)" >{{a}}</h3></tr>
+                              </table>
+                           

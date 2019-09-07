@@ -1,0 +1,16 @@
+table {
+    text-align: center;
+    color: black
+}
+th {
+    color:greenyellow;
+    font-weight: Italic;
+    font-size: 20px;
+    
+}
+tr {
+    color: lightcoral;
+    font-weight: bold;
+    font-size: 15px
+​
+}

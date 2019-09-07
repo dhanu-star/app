@@ -1,0 +1,26 @@
+.todos input.checkbox {
+                          width: 50px;
+                          height: 20px;
+                        }
+                      ​
+                         
+                        .todos button {
+                          height: 36px;
+                          vertical-align: top;
+                          border: solid 1px grey;
+                          border-radius: 2px;
+                        }
+                      ​
+                        .todos .delete-icon {
+                          cursor: pointer;
+                        }
+                       
+                         
+                        .header {
+                          background-color:red;
+                          padding: 90px 40px;
+                          color: white;
+                          text-align: center;
+                        }
+                        
+                        

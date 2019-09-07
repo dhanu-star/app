@@ -1,0 +1,14 @@
+<p>signup works!</p>
+<body>
+
+    <h1>SIGN UP PAGE</h1>
+    <form [formGroup]="page">
+    NAME:   <input type="text" formControlName="username"  style=" width: 250px;height: 30px;margin-left:110px;"><br><br>
+    E-mail:       <input type="text" formControlName="email" style=" width: 250px;height: 30px;margin-left:120px;"><br><br>
+    MOBILE:       <input type="text" formControlName="mobile" style=" width: 250px;height: 30px;margin-left:90px;"><br><br>
+    
+    PASSWORD:     <input type="password" formControlName="password" style=" width: 250px;height: 30px;margin-left:51px;"><br><br>
+                  <button  (click)="submit(page)" routerLink="exp1" > SIGN-UP</button><br><br>
+    already have an account?<a href="exp1" > login here</a>
+    </form>
+    </body>

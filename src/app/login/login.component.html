@@ -1,0 +1,11 @@
+<p>Login Form</p>
+<form [formGroup]="loginform">
+    Email:
+    <input type="text" name="email" formControlName="email" placeholder="Enter Email-id">
+    <br /><br>
+    Password:
+    <input type="password" name="pass" formControlName="password" placeholder="Enter password">
+    <br /><br>
+    <button (click)="loginpage(loginform)">Save</button>
+    <button type="button" (click)="hii()">login</button>
+</form>

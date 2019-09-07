@@ -1,0 +1,20 @@
+<body class="style">
+<h3>Reg Form</h3>
+<form [formGroup]="page">
+
+Username:<br>
+<input type="text" formControlName="username"><br><br>
+
+Email:<br>
+<input type="text" formControlName="email"><br><br>
+
+Mobile:<br>
+<input type="text" formControlName="mobile"><br><br>
+
+Password:<br>
+<input type="text" formControlName="password"><br><br>
+
+<button routerLink="login" (click)="submit(page)">Submit</button>
+</form>
+</body>
+

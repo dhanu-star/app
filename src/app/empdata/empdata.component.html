@@ -1,0 +1,28 @@
+<p>emdata works!</p>
+
+​
+<table border="2px" width=100%>
+<thead>
+<tr>
+<th>UserID</th>
+<th>FirstName</th>
+<th>LastName</th>
+<th>JobTitle</th>
+<th>Region</th>
+<th>PhoneNumber</th>
+</tr>
+</thead>
+<body>
+<tr *ngFor = 'let details of employeeData'>
+        <td>{{details.userId}}</td>
+        <td>{{details.name.firstName}}</td>
+        <td>{{details.name.lastName}}</td>
+        <td>{{details.jobTitleName}}</td>
+        <td>{{details.phoneNumber}}</td>
+        <td>{{details.region}}</td>
+​
+</tr>
+  
+</body>
+</table>
+​

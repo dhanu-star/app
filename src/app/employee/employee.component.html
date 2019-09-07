@@ -1,0 +1,22 @@
+<table style="border: 2; width:100%; text-decoration-color:red">
+    <thead>
+        <tr>
+          <th>UserId</th>
+          <th>First_Name</th>
+          <th>Last_Name</th>
+          <th>Job_Title_Name</th>
+          <th>Phone_Number</th>
+          <th>Region</th>
+        </tr>
+    </thead>
+ <tbody style="text-align: center">
+           <tr *ngFor="let list of employeeData">
+          <td>{{ list.UserId}}</td>
+         <td>{{list.Name.firstName}}</td>  
+         <td>{{list.Name.lastName}}</td>     
+          <td>{{ list.Job_Title_Name  }}</td>
+          <td>{{ list.Phone_Number  }}</td>
+          <td>{{ list.Region  }}</td>
+        </tr>
+      </tbody>
+</table>

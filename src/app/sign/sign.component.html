@@ -1,0 +1,18 @@
+<h3>Sign Form</h3>
+<form [formGroup]="signupform">
+    Username:
+    <input type="text" name="name" formControlName="username" placeholder="Enter username">
+    <br /><br>
+    Email:
+    <input type="text" name="email" formControlName="email" placeholder="Enter email">
+    <br /><br>
+    Mobile:
+    <input type="text" name="mobile" formControlName="mobile" placeholder="Enter mobile">
+    <br /><br>
+    Password:
+    <input type="password" name="passwd" formControlName="password" placeholder="Enter Password">
+    <br /><br>
+    <button (click)="signup(signupform)">Submit</button> &nbsp;&nbsp;
+    <button routerLink = "login">login</button>
+    <button routerLink="tolist">tolist</button>
+</form>

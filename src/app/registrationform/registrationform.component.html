@@ -1,0 +1,35 @@
+
+
+
+
+<form [formGroup]="signup"  >
+        <table>
+          <h2>Registrationform</h2>
+      <p>Name:
+        <tr><td><input type="text"  formControlName="name" placeholder="enter good name"></td></tr></p> 
+        
+        Gender:
+        <tr><td><select formcontrolName="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select></td></tr>
+      Mobile No:
+      <tr><td><input type="number"  formControlName="mobile" placeholder="enter your mobile"></td></tr>
+       Email:
+        <tr><td><input type="text"  formControlName="email" placeholder="Enter your email id"></td></tr>
+       
+        Password:
+        <tr><td><input type="password"  formControlName="password" placeholder="enter your password"></td></tr>
+    <br>
+    <br>
+        <button (click)="validation(signup)" (click)="submit(signup)">Submit</button>
+        
+       
+        
+    </table>
+    
+    
+    
+    </form>
+
+

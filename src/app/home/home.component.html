@@ -1,0 +1,21 @@
+<h1>emp form </h1>
+<form [formGroup]="formdata" >
+        <div>
+            email:
+            <input type="text" name="email" formControlName="mail" placeholder="Enter your email id">
+        </div><br>
+        
+        <br>
+        <div>
+            Password:
+            <input type="password" name="password" formcontrolName="password" placeholder="enter your password">
+        </div><br>
+        
+        <br>
+        <div>
+           <button (click)="getdata1(formdata)">Login</button>
+        </div>
+        </form>
+
+
+        

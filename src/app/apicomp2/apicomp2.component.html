@@ -1,0 +1,9 @@
+<p>apicomp2 works!</p>
+<form [formGroup]="registerForm2">
+                          <p>UserName: </p>
+                          <input type="text" id="name" formControlName="name" />
+                          <p>Password:</p>
+                          <input type="password" id="pass" formControlName="pass" /><br><br>
+                          <button (click)="check(registerForm2.value)">save</button>
+<button type="button" (click)="website()">login</button>                       
+</form>

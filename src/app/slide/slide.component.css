@@ -1,0 +1,18 @@
+ul{
+    background-color:red;
+    list-style-type: disc;
+    overflow: hidden;
+    text-decoration: none;
+    
+}
+li{
+    float:right;
+    display: block;
+    padding:5px;
+    margin: 0%;
+}
+.img{
+    width: 1000px;
+    height:500px;
+
+}

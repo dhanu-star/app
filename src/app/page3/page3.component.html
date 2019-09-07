@@ -1,0 +1,12 @@
+<body>
+    <input type="text" [(ngModel)]="list">
+    <button (click)="add(list)">Add</button>
+    <table>
+        <tr (click)="delete(list)" *ngFor="let array of element; let i=index"><br><br>
+             <div>
+                 {{array}}
+                 <button (click)="delete(i)">x</button>
+                </div>
+        </tr>
+    </table>
+</body>

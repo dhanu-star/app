@@ -1,0 +1,12 @@
+<p>vote works!</p>
+<div>enter age</div>
+    <input type="text" >
+
+<div *ngIf="age:18;else elseAgeBlock">
+    <b>not eligible</b>
+</div>
+   
+<ng-template #elseAgeBlock>
+       <b>eligible</b>
+   </ng-template>
+

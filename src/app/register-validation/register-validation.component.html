@@ -1,0 +1,21 @@
+<p>register-validation works!</p>
+<p>registervalidation works!</p>
+<div class="container">
+    <form [formGroup]="registerValidationform">
+        <label>FirstName</label>
+        <input type="text" formControlName="firstname" placeholder="Enter First Name" class="form-control">
+        <p *ngIf="registerValidationform.controls.firstname.hasError('required')&& registerValidationform.controls.firstname.touched" style="color: red">FirstName is Required</p>
+        <label>LastName</label>
+        <input type="text" formControlName="lastname" placeholder="Enter Last Name" class="form-control">
+        <p *ngIf="registerValidationform.controls.lastname.hasError('required')&& registerValidationform.controls.lastname.touched" style="color: red">LastName is Required</p>
+         <label>MiddleName</label>
+        <input type="text" formControlName="middlename" placeholder="Enter Middle Name" class="form-control"> -->
+         <p *ngIf="registerValidationform.controls.middlename.hasError('required')&& registerValidationform.controls.middlename.touched" style="color: red">Middle is Required</p>
+        <button type="button" (click)="register(registerValidationform.value)">Submit</button>
+​       <button type="button" (click)="hii()">login</button>
+    </form>
+​
+</div> 
+
+
+

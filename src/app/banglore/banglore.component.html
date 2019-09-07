@@ -1,0 +1,44 @@
+<p>banglore works!</p>
+<div class="todos">
+    ​
+        <div class="header">
+        <form (submit)="addTodo($event)">
+        <input [(ngModel)]="newTodo"  class="textfield" name="newTodo">
+        <button  type="submit" [disabled]="newTodo===''">addTodo</button>
+        </form>
+        </div>
+    ​   
+        <div [hidden]="newTodo">
+    ​    </div>
+    ​
+        <ul class="ul">
+        <li *ngFor="let todo of todos; let i=index" class="ul">
+        <input type="checkbox" class="checkbox" [(ngModel)]="todo.completed" />
+        <span [ngClass]="{'checked': todo.completed}">{{ todo.newTodo }}</span>
+        <span (click)="deleteTodo(i)"></span>
+        </li>
+        </ul>
+    ​
+        <button (click)="deleteTodos()">Delete</button>
+        </div>
+    ​    
+<input type="text" [(ngModel)]="name" placeholder="Serach any fields"/>
+<table id="customers" border="1" width="100%" >
+  
+ <tr>
+   <th>No.</th>
+   <th>BankName</th>
+   <th>Id</th>
+   <th>Email</th>
+   <th>Name</th>
+   <th>ifsc</th>
+ </tr>
+ <tr *ngFor="let customer of users | customerEmailFilter:name ">
+   <th scope="row">{{customer.sl}}</th>
+   <th>{{customer.bank}}</th>
+   <td>{{customer.id}}</td>
+   <td>{{customer.email}}</td>
+   <td>{{customer.name}}</td>
+   <td>{{customer.ifsc}}</td>
+ </tr>
+</table>  

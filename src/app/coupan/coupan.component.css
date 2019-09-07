@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    align-content: center;
+    border:dotted rgba(53, 52, 52, 0.384) 6px;
+    width:400px;
+    height:550px;
+    margin-left:35%;
+    border-radius: 20px;
+    margin-top:40px;
+}
+h1{
+    background-color:pink;
+}
+h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.coupan{
+    background-color: gainsboro;
+}
+input{
+    padding: 2px 3px;
+    background-color: gainsboro;
+    border: none;
+    color: black;
+}

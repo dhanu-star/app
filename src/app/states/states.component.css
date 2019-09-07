@@ -1,0 +1,42 @@
+
+table{
+    margin-right:20px;
+    width:90%;
+    border: black;
+    border-collapse: collapse;
+ }
+
+    th,td{
+      padding:5px;
+    }
+
+    tr:nth-child(odd){
+    background-color:white;
+ }
+
+    tr:nth-child(even){
+    background-color: lightgray;
+}
+
+    td:hover{
+    background-color:black;
+    color:white;
+
+    }
+
+    th:hover{
+
+        background-color:darkgray;
+        color:black;
+    }
+
+    tr:hover+tr{
+
+        display:title;
+
+    }
+    table,th,td{  
+        border: 2px solid grey;
+    
+      }
+      
